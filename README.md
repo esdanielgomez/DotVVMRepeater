@@ -4,6 +4,8 @@ In this repository we can find one of the DotVVM controls to render HTML templat
 
 Repeater is a tag that allows us to set a preset HTML template to render items from a given listing. In other words, this control repeats a template for each item in a referenced collection in a DataSource.
 
+**Tutorial**: Soon! 
+
 ## Screenshot with result
 
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vuhgvjmwh08lr883r5x6.png)
