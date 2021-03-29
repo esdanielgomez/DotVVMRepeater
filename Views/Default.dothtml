@@ -1,0 +1,32 @@
+﻿@viewModel DotVVMRepeater.ViewModels.DefaultViewModel, DotVVMRepeater
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+	<main id="main">
+		<div class="container" data-aos="fade-up">
+			<section id="speakers" class="section-with-bg">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<p></p>
+						<h2>CITIES</h2>
+						<p>City recommendations to visit</p>
+					</div>
+
+					<dot:Repeater DataSource="{value: Cities}" class="row">
+						<ItemTemplate>
+							<div class="col-lg-4 col-md-6">
+								<div class="speaker" data-aos="fade-up" data-aos-delay="100">
+									<img src="{{value: PhotoLink}}" alt="{{value: Name}}" class="img-fluid">
+									<div class="details">
+										<h3><a href="#" target="_blank">{{value: Name}}</a></h3>
+										<p>{{value: Country}}</p>
+									</div>
+								</div>
+							</div>
+						</ItemTemplate>
+					</dot:Repeater>
+
+				</div>
+			</section><!-- End Sponsors Section -->
+		</div>
+	</main>
+</dot:Content>
